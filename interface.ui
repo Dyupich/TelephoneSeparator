@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>543</width>
+    <height>314</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow {
+border: 2px solid #A4004D;
+background-color: #404040;
+color: #FFFF00;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">QWidget {
+border: 2px solid #A4004D;
+background-color: #404040;
+color: #FFFF00;
+}</string>
+   </property>
+   <widget class="QLabel" name="pathStartLabel">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>50</y>
+      <width>401</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+border: 2px solid #A4004D;
+background-color: #404040;
+color: #FFFF00;
+}</string>
+    </property>
+    <property name="text">
+     <string>Введите путь к необработанному файлу .xlsx</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="editStart">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>100</y>
+      <width>511</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {
+border: 2px solid #A4004D;
+background-color: #404040;
+color: #FFFF00;
+}</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="pathEndLabel">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>150</y>
+      <width>471</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+border: 2px solid #A4004D;
+background-color: #404040;
+color: #FFFF00;
+}</string>
+    </property>
+    <property name="text">
+     <string>Введите имя обработанного файла без пробелов. Пример: excelTable123.xlsx</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="browseButtonStart">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>50</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+border: 2px solid #A4004D;
+background-color: #404040;
+color: #FFFF00;
+transition: 0.1s linear;
+
+}
+
+QPushButton:hover {
+border: 2px solid #6B0032;
+background-color: #2A1515;
+cursor: pointer;
+}</string>
+    </property>
+    <property name="text">
+     <string>Обзор...</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="runButton">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>230</y>
+      <width>131</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+border: 2px solid #A4004D;
+background-color: #404040;
+color: #FFFF00;
+transition: 0.1s linear;
+
+}
+
+QPushButton:hover {
+border: 2px solid #6B0032;
+background-color: #2A1515;
+cursor: pointer;
+}</string>
+    </property>
+    <property name="text">
+     <string>Выполнить</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="editEnd">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>190</y>
+      <width>511</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
